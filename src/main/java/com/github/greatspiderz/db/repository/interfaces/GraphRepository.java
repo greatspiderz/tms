@@ -5,4 +5,5 @@ import com.github.greatspiderz.exception.TMSException;
 
 public interface GraphRepository {
     void saveGraph(TaskGraph taskGraph) throws TMSException;
+    TaskGraph fetchGraph(String graphId) throws TMSException;
 }

@@ -5,4 +5,5 @@ import com.mongodb.DBObject;
 
 public interface Adapter<T> {
     DBObject toDBObject(T t) throws TMSException;
+    T fromDBObject(DBObject dbObject) throws TMSException;
 }
